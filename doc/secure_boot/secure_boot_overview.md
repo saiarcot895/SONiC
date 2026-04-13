@@ -3,6 +3,25 @@ Secure Boot Overview
 
 # Table of Contents
 
+* [Purpose](#purpose)
+* [Background](#background)
+  * [What's not covered by secure boot](#whats-not-covered-by-secure-boot)
+* [Terminology](#terminology)
+* [Architecture-specific support](#architecture-specific-support)
+  * [amd64](#amd64)
+  * [arm64](#arm64)
+* [Updating key databases](#updating-key-databases)
+  * [Creating EFI signature lists](#creating-efi-signature-lists)
+  * [Signing EFI signature lists](#signing-efi-signature-lists)
+  * [Updating from setup mode](#updating-from-setup-mode)
+  * [Updating from user mode](#updating-from-user-mode)
+* [Signature verification](#signature-verification)
+* [Usage on typical consumer hardware](#usage-on-typical-consumer-hardware)
+  * [Supporting secure boot on Linux](#supporting-secure-boot-on-linux)
+* [Possible usage in SONiC and enterprise network switches](#possible-usage-in-sonic-and-enterprise-network-switches)
+  * [Approach 1: Hardware vendor ships device with requested secure boot certificates](#approach-1-hardware-vendor-ships-device-with-requested-secure-boot-certificates)
+  * [Approach 2: Hardware vendor ships device with no secure boot certificates](#approach-1-hardware-vendor-ships-device-with-no-secure-boot-certificates)
+
 # Purpose
 
 This document is to give an overview of secure boot, what it does, what it doesn't do, and how enterprise network switches may make use of/implement secure boot. This does not cover any specific SONiC CLIs or SONiC implementation, and is meant to be a general guide.

@@ -38,7 +38,7 @@ Secure boot only says that the image being loaded (at least, the kernel being lo
 
 Both of the above gaps are better covered by measured boot, which, at a high level, takes a hash of various parts of the system state for later verification/use. This typically requires the hardware to have a TPM2 module (most modern CPUs have one as part of the CPU itself), and may require changes to how the OS is booted for proper/full verification.
 
-Measured boot is orthogonal to secured boot, in that one can be enabled without the other, and both cover different things. Secure boot verifies the next thing being loaded is valid ("forward verification"), whereas measured boot makes sure that everything that has happened so far is valid/expected ("backward verification").
+Trusted boot is orthogonal to secured boot, in that one can be enabled without the other, and both cover different things. Secure boot verifies the next thing being loaded is valid ("forward verification"), whereas trusted boot makes sure that everything that has happened so far is valid/expected ("backward verification").
 
 # Terminology
 

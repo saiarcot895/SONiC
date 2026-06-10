@@ -138,3 +138,15 @@ If feasible, the customer can provide the hardware vendor with the PK, KEK, and 
 ## Approach 2: Hardware vendor ships device with no secure boot certificates
 
 Alternatively, the hardware vendor could ship a device with no certificates loaded at all (and thus have secure boot in setup mode). This lets the customer load their own certificate without starting with a signed key rotation. This does mean an unsigned/unvalidated image could be loaded on the device prior to certificates being loaded and secure boot being enabled; depending on the threat model/level, this may or may not be an issue.
+
+# References
+
+* [Secure Boot Overview | Microsoft Learn](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-8.1-and-8/hh824987(v=win.10))
+* [From Trust to Trouble: The Supply Chain Implications of a Broken DBX | Binarly](https://www.binarly.io/blog/from-trust-to-trouble-the-supply-chain-implications-of-a-broken-dbx)
+* [Secure Boot Workflow · microsoft/secureboot_objects Wiki · GitHub](https://github.com/microsoft/secureboot_objects/wiki/Secure-Boot-Workflow)
+* [Windows Secure Boot Key Creation and Management Guidance | Microsoft Learn](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-secure-boot-key-creation-and-management-guidance?view=windows-11)
+* [Making UEFI Secure Boot Work With Open Platforms - The Linux Foundation](https://www.static.linuxfound.org/sites/main/files/lf_uefi_secure_boot_open_platforms.pdf)
+* [SecureBoot - Debian Wiki](https://wiki.debian.org/SecureBoot)
+* [grub2 - Secure Boot with grub and no third party keys - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/791911/secure-boot-with-grub-and-no-third-party-keys)
+* [Managing EFI Boot Loaders for Linux: Controlling Secure Boot](https://www.rodsbooks.com/efi-bootloaders/controlling-sb.html)
+* [Secure Boot - Gentoo wiki](https://wiki.gentoo.org/wiki/Secure_Boot)
